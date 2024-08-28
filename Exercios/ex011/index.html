@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente aumentar e diminuir o tamanho do seu navegador ou abra esse site em dispositivos diferentes.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_pe.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_me.png" type="image/png">
+        <img src="imagens/foto_gr.png" alt="foto dinâmica">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio me HTML5</p>
+    <audio src="media/give_my_regards_to_broadway-freedom_trail_studio.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+        <a href="media/guanacast-33.mp3">clique aqui para baixar o áudio</a>
+    </audio>
+</body>
+</html>

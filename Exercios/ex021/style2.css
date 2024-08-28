@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: blue;
+}
+header{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    box-shadow: 4px 4px 10px #0000003f;
+}
+main{
+    background-color: lightcyan;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px 10px #0000003f;
+}
+footer{
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px 10px #0000003f;
+}
+nav{
+    background-color: lightgrey;
+}
+nav > a{
+    margin: 30px;
+    text-decoration: none;
+}
+nav > a:hover{
+    text-decoration: underline;
+}

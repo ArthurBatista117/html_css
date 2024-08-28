@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens dinâmicas facilitam muito a vida do usuário ao carregar a imagem em um tamanho mais agradável de acordo com o tamanho da tela do usuário.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1150px)" srcset="imagem/paisagem-m.png
+        " type="image/png">
+        <img src="imagem/paisagem-g.png" alt="Imagem Dinâmica">
+    </picture>
+</body>
+</html>
