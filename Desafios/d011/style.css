@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cont{
+    position: relative;
+    width: max-content;
+}
+
+#ajuste{
+    display: block;
+    width: 100%;
+}
+#centro{
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+    opacity: 0.7;
+}
