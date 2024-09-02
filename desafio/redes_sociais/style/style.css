@@ -28,6 +28,29 @@ section#telefone{
     transform: translate(-50%, -50%);
     background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
 }
+
+section#redes-sociais{
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    margin: 10px;
+}
+
+section#redes-sociais img{
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.423);
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.615);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.423);
+    transition: 0.5;
+}
+
 iframe#tela{
     position: absolute;
     top: 80px;
