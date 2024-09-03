@@ -1,0 +1,1 @@
+Dados rebebidos, aprenda PHP para manipulalos
