@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail e Telefone</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario 4</h1>
+    <h2>E-mail e Telefone</h2>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label for="mail">E-mail: </label>
+                <input type="email" name="mail" id="mail" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="tele">Telefone: </label>
+                <input type="tel" name="tele" id="tele" autocomplete="tel-local" pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
