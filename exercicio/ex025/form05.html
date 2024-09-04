@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box e Radio</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <h2>Check Box e Radio</h2>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <input type="radio" name="sexo" id="smasc" value="M" checked> <label for="smasc">Masculino</label>
+                <input type="radio" name="sexo" id="sfemn" value="F"> <label for="sfemn">Feminino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <div>
+                <input type="checkbox" name="Futebol" id="Futebol"> <label for="Futebol">Futebol</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Futesal" id="Futsal"> <label for="Futsal">Futsal</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Basketboll" id="Basketboll"> <label for="Basketboll">Basketboll</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Vôleiboll" id="Vôleiboll"> <label for="Vôleiboll">Vôleiboll</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ping" id="pong"> <label for="pong">Tênis de Mesa</label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
