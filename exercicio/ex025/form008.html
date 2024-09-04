@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 8</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <h2>Output</h2>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="n1">Número1: </label>
+            <input type="number" name="n1" id="n1" required>
+        </div>
+        <div>
+            <label for="n2">Número2: </label>
+            <input type="number" name="n2" id="n2" required>
+        </div>
+
+        <div>
+            <label for="val">Número: </label>
+            <input type="range" name="val" id="val" value="5" min="0" max="10" oninput="num.innerHTML = Number(val.value)">
+            <output id="num"> 5 </output>
+        </div>
+
+        <div id="r">
+            
+        </div>
+        <div>
+            <input type="button" value="Somar" onclick="somar()">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        somar = () =>{
+            let r = document.getElementById('r')
+            let txtn1 = document.getElementById('n1')
+            let txtn2 = document.getElementById('n2')
+
+            let n1 = Number(txtn1.value)
+            let n2 = Number(txtn2.value)
+
+            r.innerHTML = `${n1} + ${n2} = ${n1+n2}`
+        }
+    </script>
+</body>
+</html>
