@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <h2>Select e textarea</h2>
+
+    <!-- É recomendado q ao usar textarea, usar o método POST -->
+
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="uf">Estados</label>
+            <select name="uf" id="uf">
+                <option value="">--escolha--</option>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="msg">Mensagem: </label><br>
+            <textarea name="msg" id="msg"></textarea>
+        </div>
+
+        <div>
+            <label for="pro">Profissão: </label>
+            <input type="text" name="pro" id="pro" list="lstpro">
+            <datalist id="lstpro">
+                <option value="ADM">Administrador</option>
+                <option value="TI">Técnico em Informática</option>
+                <option value="PROF">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
