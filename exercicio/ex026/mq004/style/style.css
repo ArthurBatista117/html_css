@@ -31,7 +31,7 @@ h1{
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.401);
 }
 
-img#phone{display: none;}
+img#phone{display: inline;}
 img#tablet{display: none;}
 img#impressora{display: none;}
 img#computador{display: none;}

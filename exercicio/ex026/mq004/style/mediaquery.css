@@ -1,13 +1,52 @@
 @charset "UTF-8";
 
 @media print {
-
+    body{
+        /* background: black url('../imagens/back-print.jpg') no-repeat center center /cover;  desnecessário*/
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: inline;}  
+    img#computador{display: none;}
+    img#televisao{display: none;}
 }
 
-@media screen and (max-width: 1000px){
-    
+@media screen and (min-width: 768px) and (max-width: 992px){   /*Tablets*/
+    body{
+        background: black url('../imagens/back-tablet.jpg') no-repeat center center /cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: inline;}
+    img#impressora{display: none;}  
+    img#computador{display: none;}
+    img#televisao{display: none;}
 }
 
-@media screen and (max-width: 800px) {
-    
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktop*/
+    body{
+        background: black url('../imagens/back-pc.jpg') no-repeat center center /cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#computador{display: inline;}
+    img#televisao{display: none;}
+}
+
+@media screen and (min-width: 1201px){  /*Grandes Telas*/
+    body{
+        background: black url('../imagens/back-tv.jpg') no-repeat center center /cover;
+    }
+
+    main{
+        width: 700px;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#computador{display: none;}
+    img#televisao{display: inline;}
 }
