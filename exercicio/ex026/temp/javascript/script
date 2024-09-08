@@ -1,0 +1,8 @@
+let btn_menu = document.querySelector('#btn-menu')
+
+menu = () =>{
+    let nav = document.querySelector('#menu')
+    nav.classList.toggle('active')
+}
+
+btn_menu.addEventListener('click', menu)
