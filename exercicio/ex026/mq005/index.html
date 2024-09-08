@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" media="all">
     <link rel="stylesheet" href="style/mediaqueries.css">
+    <script defer src="javascript/script.js"></script>
 </head>
 
 <body>
@@ -39,23 +40,6 @@
             doloremque, iusto molestias corporis harum omnis molestiae. Tempore cupiditate quidem veniam autem
             asperiores ipsum illo.</p>
     </main>
-    <script>
-        var itens = document.getElementById('mn'); // Obtém o menu
-        var burger = document.getElementById('burger'); // Obtém o botão
-
-        burger.addEventListener('click', menu); // Adiciona o evento de clique ao botão
-
-        function menu() {
-            // Usa getComputedStyle para obter o estilo atual do menu
-            var display = window.getComputedStyle(itens).display;
-
-            if (display === 'block') {
-                itens.style.display = 'none'; // Esconde o menu
-            } else {
-                itens.style.display = 'block'; // Mostra o menu
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -26,11 +26,17 @@ header h1{
     padding: 20px;
 }
 
-nav a{ 
+nav{
     display: none;
+}
+
+nav.active{
+    display: block;
+} 
+nav a{ 
     text-decoration: none;
     text-align: center;
-    background-color: #8a8989;
+    display: block;
     color: white;
     border-top: 1px solid darkgray;
 }
@@ -47,11 +53,6 @@ span#burger{
     color: white;
     padding: 10px;
     cursor: pointer;
-}
-
-span#burger:hover{
-    background-color: white;
-    color: black;
 }
 
 main{
@@ -73,4 +74,16 @@ main h2{
 
 main p{
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    span#burger{
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1201px) {
+    span#burger{
+        display: none;
+    }  
 }
