@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#btn-menu{
+        display: none;
+    }
+
+    nav#menu{
+        display: block;
+        text-align: left;
+    }
+    nav > ul > li{
+        display: inline-block;
+        margin-inline: 30px;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    nav a{
+        border: none;
+    }
+    nav a:hover{
+        background-color: #d120fa;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    main{
+        width: 768px;
+    }
+}
