@@ -7,6 +7,8 @@ body{
 div#container{
     display: flex;
     flex-direction: row;
+    flex-flow: row  wrap;
+    justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -17,7 +19,8 @@ div#container{
 
 div.itens{
     background: #ffffff78;
-    height: 100px;
+    height: 200px;
+    width: 800px;
     margin: 10px;
     border-radius: 5px;
     text-align: center;
