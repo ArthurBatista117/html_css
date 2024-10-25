@@ -10,9 +10,9 @@ main#container{
     background-color: #ccc;
     height: 200px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-flow: column wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     align-content: space-around;
     align-items: flex-start;
 }
@@ -22,4 +22,11 @@ section.item{
     color: #fff;
     padding: 20px;
     margin: 5px;
+}
+
+section.sec01{
+    /*flex-grow: 2;
+    flex-shrink: 300px;
+    flex-basis: 2;*/
+    flex: 1 2 300px;
 }

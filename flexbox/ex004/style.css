@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background: #ff6a00d9;
+}
+
+div#container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+    div#container{
+        flex-direction: column;
+    }
+}
+
+div.itens{
+    background: #ffffff78;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+div.itens:hover{
+    background: #ffffffb0;
+}
