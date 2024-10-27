@@ -120,3 +120,72 @@ span:hover{
     transition: 0.5s;
     color: var(--cor3);
 }
+
+img{
+    width: 90px;
+    height: 90px;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    margin-block: 160px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.itens{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 35%;
+    font-size: 1.4em;
+    margin-block: 60px;
+}
+
+div.imgs{
+    margin-inline: 20px;
+}
+
+div.conteudo{
+    text-align: justify;
+    line-height: 35px;
+}
+
+div.conteudo p{
+    margin-top: 20px;
+}
+
+div.conteudo a{
+    text-decoration: none;
+}
+
+div.conteudo a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor4);
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+div.itensf{
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+div.itensf a{
+    text-decoration: none;
+    color: #fff;
+}
+
+div.itensf a:hover{
+    text-decoration: underline;
+}
